@@ -47,7 +47,7 @@ int main() {
     cout << "Debug Mode: Printing student data..." << endl;
     //Display the students' data to verify it's stored correctly
     for (const auto& student : students) {
-        cout << "First Name: " << student.firstName << ", Last Name: " << student.lastName << std::endl;
+        cout << "First Name: " << student.firstName << ", Last Name: " << student.lastName << endl;
     }
     #endif
 
