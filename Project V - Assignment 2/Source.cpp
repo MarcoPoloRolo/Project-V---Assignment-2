@@ -27,7 +27,7 @@ int main() {
 
     string line;
     //Read the file line by line
-    while (std::getline(inputFile, line)) {
+    while (getline(inputFile, line)) {
         stringstream ss(line);
         string firstName, lastName;
 
