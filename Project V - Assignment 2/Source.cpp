@@ -44,6 +44,14 @@ int main() {
 
     inputFile.close();
 
+    #ifdef _DEBUG
+    cout << "Debug Mode: Printing student data..." << endl;
+    //Display the students' data to verify it's stored correctly
+    for (const auto& student : students) {
+        cout << "First Name: " << student.firstName << ", Last Name: " << student.lastName << endl;
+    }
+    #endif
+
     // Check for Pre-Release mode
     #ifdef PRE_RELEASE
     cout << "Pre-Release Mode: Loading student emails..." << endl;
